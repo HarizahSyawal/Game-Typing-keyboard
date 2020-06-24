@@ -1,0 +1,47 @@
+int main()
+{
+    int screenWidth = getmaxwidth();
+    int screenHeight = getmaxheight();
+
+    initwindow(screenWidth, screenHeight);
+    settextstyle(DEFAULT_FONT, HORIZ_DIR, 6);
+    Text t("Hello World", 100, 100, 800, 200);
+    //t.draw();
+    int size = 2;
+    string texts[size] = {"Osamaabdalla", "Hello Wrold"};
+    char ch ;
+
+    // demo 1
+    for (int j = 0; j < size; j++)
+    {
+
+        t.setString(texts[j]);
+        t.draw();
+        for (int i = 0; i < t.length(); i++)
+        {
+            tryAgain:
+            if(kbhit())
+            getch();
+            ch = getch();
+            if(ch == texts[j][i])
+            t.highlight(i);
+            else goto tryAgain;
+            delay(20);
+        }
+    }
+
+    // demo 2
+    t.draw();
+    t.setHighlightColor(GREEN);
+
+    for (int i = 0; i < t.length(); i++)
+    {
+        t.highlight(i);
+        delay(500);
+        t.unhighlight(i);
+    }
+
+    getch();
+
+    return 0;
+}

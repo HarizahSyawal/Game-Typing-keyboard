@@ -1,0 +1,72 @@
+
+#include <iostream>    
+#include <string>
+using namespace std;
+int main()
+{
+     cout << "You are now writing a program
+      in c++ language "
+          << "you had already included the 
+          standard library in the "
+          << "and the main function is the 
+          function is the int main(){} "
+          << "cout << is baically to print 
+          something out on the screen"
+          << "when you run the program "
+          
+          << "Now we are going to do some c
+          alculation"
+          <<" to calculate some addition "
+          
+          << endl;
+
+     int x;
+     x = 5;
+     int y;
+     y = 3;
+     int z;
+     z = x + y;
+
+     cout << "You had made the first arithmetic addition z = 8" << z
+          << "endl means you want to go to the seconde line also ( \n)"
+          << "which do the same thing"
+          << "you had now completed most of the program " << endl
+          << "Later during this program you are going to type system("
+             "Pause"
+             ") which actually"
+          << "which actually not neccessary for all IDE but since 
+          I am typing this code in "
+          << "VS code it is neccessray to write it down ";
+     cout << "Now we are going to declare some 
+     different data types for numbers";
+
+     float f;
+     double d;
+     int i;
+
+     cout << "these are the main data types for numbers "
+          << "However if you have a decimal number and 
+          it is quite long you use double "
+          << "while if you are pretty sure that the number 
+          is not going to have any decimal values "
+          << "and the float is not a common data type to be
+           used but it is also for decimal numbers like "
+          << "double but not for long digits";
+     char c = 'A' cout << "You had now declared a data type that
+      is called char = character "
+                       << "like what the name descriping it 
+                       declare only one char to the screen "
+                       << "However if you want to print a whole 
+                       sentence on the screen you can write doewn ";
+
+     string name = "osama";
+     cout << name;
+
+     cout << "This will print the name osama on the screen
+      by using the string data type from "
+          << "the string library which is #include <string> ";
+     cout << "Now that is the end of the program,
+      see you on our next session ^-^ ";
+
+     system("pause");
+}
